@@ -18,7 +18,7 @@ START = "2018-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.sidebar.title("⚙️ Control Panel")
-st.sidebar.info("Dashboard Prediksi Harga Bitcoin berbasis AI")
+st.sidebar.info("Prediksi Harga Bitcoin dengan AI")
 
 # Menambah opsi Altcoin
 selected_stock = st.sidebar.selectbox(
@@ -43,7 +43,7 @@ def load_data(ticker):
     return data
 
 # --- 4. MAIN INTERFACE ---
-st.title(f"🚀 {selected_stock} AI Prediction Dashboard")
+st.title(f"🚀 {selected_stock} AI Prediction")
 
 data_load_state = st.text('Sedang memuat data dari pasar global...')
 data = load_data(selected_stock)
